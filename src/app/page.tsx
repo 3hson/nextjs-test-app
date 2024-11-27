@@ -1,9 +1,8 @@
 import Image from "next/image";
+export const runtime = "edge";
 
 export default async function Home() {
   const result = await ((await fetch("https://run.mocky.io/v3/ed3e7f1e-0b97-4d75-85e7-20669c7af657")).json());
-
-
   return (
     <>
 
